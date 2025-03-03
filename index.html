@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-media.css">
 
     <title>Calculator</title>
 
@@ -16,89 +17,84 @@
 
     <h1>Calculator</h1>
 
+    <div class="display-data">
+        <p class="display" id="displaySection">---</p>
+    </div>
+
     <table>
 
-        <!-- Line One -->
-        <tr>
-            <td colspan="4" class="display-data">
-                <p class="display" id="displaySection">---</p>
-            </td>
-        </tr>
-
-        <!-- Line Two -->
-        <tr>
-            <td colspan="2">
-                <button class="lg-buttons" id="clearBtn" type="button">Clear</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="percentBtn" type="button">%</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="divBtn" type="button">/</button>
-            </td>
-        </tr>
-        
-        <!-- Line Three -->
-        <tr>
-            <td>
-                <button class="reg-buttons" id="sevBtn" type="button">7</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="eightBtn" type="button">8</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="nineBtn" type="button">9</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="mulBtn" type="button">*</button>
-            </td>
-        </tr>
-
-        <!-- Line Four -->
-        <tr>
-            <td>
-                <button class="reg-buttons" id="fourBtn" type="button">4</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="fiveBtn" type="button">5</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="sixBtn" type="button">6</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="subBtn" type="button">-</button>
-            </td>
-        </tr>
-
-        <!-- Line Five -->
-        <tr>
-            <td>
-                <button class="reg-buttons" id="oneBtn" type="button">1</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="twoBtn" type="button">2</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="threeBtn" type="button">3</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="plusBtn" type="button">+</button>
-            </td>
-        </tr>
-
-        <!-- Line Six -->
-        <tr>
-            <td colspan="2">
-                <button class="lg-buttons" id="zeroBtn" type="button">0</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="decBtn" type="button">.</button>
-            </td>
-            <td>
-                <button class="reg-buttons" id="equalBtn" type="button">=</button>
-            </td>
-            <td></td>
-        </tr>
+         <tbody>
+            <tr>
+                <td colspan="2">
+                    <button class="lg-buttons" id="clearBtn" type="button">Clear</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="percentBtn" type="button">%</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="divBtn" type="button">/</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button class="reg-buttons" id="sevBtn" type="button">7</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="eightBtn" type="button">8</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="nineBtn" type="button">9</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="mulBtn" type="button">*</button>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <button class="reg-buttons" id="fourBtn" type="button">4</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="fiveBtn" type="button">5</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="sixBtn" type="button">6</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="subBtn" type="button">-</button>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <button class="reg-buttons" id="oneBtn" type="button">1</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="twoBtn" type="button">2</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="threeBtn" type="button">3</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="plusBtn" type="button">+</button>
+                </td>
+            </tr>
+    
+            <tr>
+                <td colspan="2">
+                    <button class="lg-buttons" id="zeroBtn" type="button">0</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="decBtn" type="button">.</button>
+                </td>
+                <td>
+                    <button class="reg-buttons" id="equalBtn" type="button">=</button>
+                </td>
+                <td></td>
+            </tr>
+         </tbody>
+    
     </table>
 
     <script src="index.js"></script>

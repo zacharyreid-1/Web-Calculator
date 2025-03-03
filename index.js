@@ -210,7 +210,14 @@ equalBtn.onclick = function(){
         displaySection.textContent = display;
     }
     else{
-        display = eval(display);
-        displaySection.textContent = display;
+        let evalNum = eval(display);
+        if (typeof evalNum === "number" && !Number.isInteger(evalNum)){
+            display = evalNum.toFixed(3);
+            displaySection.textContent = display
+        }
+        else{
+            display = evalNum
+            displaySection.textContent = display;
+        }
     }
 }

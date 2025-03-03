@@ -4,6 +4,8 @@
     --button-color: rgb(195, 73, 70);
     --hover-button-color: rgb(168, 59, 57);
     --text-color: rgb(255, 255, 255);
+    --scrollbar-thumb-color: rgb(40, 40, 40);
+    --scrollbar-thumb-hover-color: rgb(50, 50, 50);
 }
 
 body{
@@ -17,22 +19,53 @@ h1{
     color: var(--text-color);
 }
 
+.display-data{
+    background-color: var(--secondary-background-color);
+    max-width: 312px;
+    margin: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
 .display{
     color: var(--text-color);
     font-size: 1.5em;
     text-align: center;
     vertical-align: middle;
+    margin-bottom: 0;
+    padding: 25px 50px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.display::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+.display::-webkit-scrollbar-track{
+    background-color: var(--secondary-background-color);
+}
+
+.display::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 10px;
+}
+
+.display::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scrollbar-thumb-hover-color);
 }
 
 table{
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0;
-    border-radius: 25px;
+    border-radius: 0px 0px 25px 25px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
     background-color: var(--secondary-background-color);
+    max-width: 100%;
 }
 
 button{
